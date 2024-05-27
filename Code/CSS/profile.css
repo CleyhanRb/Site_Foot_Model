@@ -1,0 +1,137 @@
+.container{
+    margin: 20px;
+}
+
+.field{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+}
+
+.field > div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid gray;
+}
+
+
+.field-container form{
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 1;
+}
+
+#bad-id{
+    text-align: center;
+    margin: 10px 0;
+    color: var(--main-backcolor);
+}
+
+.field label {
+    
+    font-weight: bold;
+}
+
+form input {
+    user-select: none;
+    
+    padding: 10px;
+    border: 0;
+    
+    outline: 0;
+    box-shadow: none;
+
+}
+
+.field-container input:not(input[type="submit"]){
+    background-color: var(--main-backcolor);
+    color: var(--main-forecolor);
+    
+    width: 100%;
+}
+
+#submit{
+    background-color: var(--menu-backcolor);
+    color: var(--menu-forecolor);
+    font: var(--main-font);
+    cursor: pointer;
+    border-radius: 200px;
+    height: 40px;
+    /* width: 100px; */
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+
+.infos {
+    flex-basis: 50%;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+
+.part-container{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+@media (max-width: 768px) {
+    .part-container{
+        flex-flow: row wrap;
+    }
+}
+
+
+
+.part-bets{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+
+.match {
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 50%;
+    height: fit-content;
+    width: 250px;
+    margin: 10px;
+}
+
+.match > h3 {
+    text-align: center;
+    margin: 15px;
+    font-size: 1.3em;
+}
+
+.bets {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.bet-line{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.state-lost{
+    color: red;
+}
+
+.state-won{
+    color: Green;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.state-got{
+    color: blue;
+}

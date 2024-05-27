@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    height: 80%;
+}
+
+
+
+
+
+
+  /* DESKTOP */
+@media (min-width:768px) {
+
+    table, td {
+        border: 1px solid var(--main-forecolor);
+        padding: 5px 5px;
+    }
+    
+    table td {
+        text-align: center;
+        
+    }
+    
+    table{
+        border-collapse: collapse;
+        padding: 20px;
+        margin-top: 10px;
+        width: 90%;
+        height: 100%;
+    }
+    
+    thead th {
+        background-color: var(--main-forecolor);
+        color: var(--menu-forecolor);
+        border: 1px solid var(--menu-forecolor);
+        padding: 5px 10px;
+    }
+    
+    tbody tr:nth-child(odd) {
+        background-color: var(--main-backcolor);
+      }
+      
+    tbody tr:nth-child(even) {
+        background-color: var(--menu-backcolor-secondary);
+        color: white;
+      }
+}
+
+/* MOBILE */
+@media (max-width:768px) {
+    thead{
+        display: none;
+    }
+    
+    tbody{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+    
+    tbody tr{
+        display: flex;
+        flex-flow: column wrap;
+        flex: 50%;
+        background-color: var(--menu-backcolor-secondary);
+        margin: 10px 0;
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+    
+    td.d0::before{ content: "Lundi: \A"; }
+    td.d1::before{ content: "Mardi: \A"; }
+    td.d2::before{ content: "Mercredi: \A"; }
+    td.d3::before{ content: "Jeudi: \A"; }
+    td.d4::before{ content: "Vendredi: \A"; }
+    
+    td.day::before{
+        display: block;
+    }
+    
+    
+    td.score::before{
+        display: block;
+        content: '\A';
+        white-space: pre;
+        padding-bottom: 10px;
+    }
+    
+    td{
+        color: var(--menu-forecolor);
+        text-align: center;
+        width: 100%;
+    }
+    
+    .matchTitle{
+        background-color: var(--main-forecolor);
+        
+        width: 100%;
+        padding: 10px;
+    }
+    
+    td.first{
+        padding-top: 10px;
+    }
+    
+    td.day::before{
+        font-weight: bold;
+        text-decoration: underline;
+        padding-bottom: 10px;
+        padding-left: -5px;
+    }
+    td.dayn{
+        padding-left: 10px;
+    }
+}
+
+

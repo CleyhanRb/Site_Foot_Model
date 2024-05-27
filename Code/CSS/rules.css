@@ -1,0 +1,35 @@
+@media (min-width:768px) {
+    .container{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media (max-width:768px) {
+    .container{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: left;
+    }
+
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+}

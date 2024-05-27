@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+
+/* COLOR PALETTE: https://colors.muz.li/palette/e2dcde/101d46/831113/81848f/9b6464 */
+
+:root{
+    --main-backcolor: #e2dcde;
+    
+    --blue-forecolor: #101d46;
+    --blue-secondary: #81848f;
+
+    --main-forecolor: #461010;
+    --menu-backcolor-secondary: #81848f;
+    /* --main-forecolor: #831113;
+    --menu-backcolor-secondary: #9b6464; */
+    
+    --main-font: normal 500 16px "Montserrat", sans-serif;
+    --main-font-familly: "Montserrat", sans-serif;
+    
+    --menu-backcolor: var(--main-forecolor);
+    --menu-forecolor: var(--main-backcolor);
+
+    --font-color-hover: white;
+
+
+    
+}
+
+* {
+    user-select: none;
+    font-family: var(--main-font-familly);
+}
+
+html, body{
+    
+    overflow-x: hidden;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    background-color: var(--main-backcolor);
+    color: var(--main-forecolor);
+    
+    font: var(--main-font);
+
+    width: 100%;
+    height: 100%;
+
+}
+
+footer{
+    
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+}

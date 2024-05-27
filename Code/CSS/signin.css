@@ -1,0 +1,136 @@
+.container{    
+    display: block;
+
+}
+
+
+/* DESKTOP */
+@media (min-width:768px) {
+
+    body{
+        background-color: var(--menu-backcolor-secondary);
+    }
+
+    .container{
+        height: calc(100% - 105px);
+        background-color: var(--menu-backcolor-secondary);
+        
+    }
+
+    .signin-form{
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%, 10%);        
+    }
+}
+
+/* MOBILE */
+@media (max-width:768px) {
+    .container{
+        display: flex;
+        height: calc(100% - 115px);
+        background-color: var(--main-backcolor);
+
+        justify-content: center;
+    }
+}
+
+
+.signin-form{
+
+    position: sticky;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-flow: column;
+    flex-grow: 0;
+        
+    align-items: center;
+    justify-content: flex-start;
+    
+    width: fit-content;
+
+    border-radius: 10px;
+    background-color: var(--main-backcolor);
+
+    padding: 30px 75px;
+    
+}
+
+.signin-inputs {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+
+    margin-top: 10px;
+}
+
+.signin-inputs input {
+    user-select: none;
+    
+    padding: 10px 10px;
+    border: 0;
+    
+    outline: 0;
+    box-shadow: none;
+
+    
+}
+
+.password-reset{
+    margin-top: 5px;
+    color: var(--main-forecolor);
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.signin-inputs > * {
+    margin: 15px 0px;
+    width: 300px;
+}
+
+.signin-inputs b {
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.signin-inputs input[type="email"]{
+    background-color: var(--main-backcolor);
+    color: var(--main-forecolor);
+    width: 250px;
+}
+
+.signin-inputs > div{
+    border-bottom: 1px solid gray;
+}
+
+
+#submit{
+    background-color: var(--menu-backcolor);
+    color: var(--menu-forecolor);
+    font: var(--main-font);
+    cursor: pointer;
+    border-radius: 200px;
+    height: 50px;
+}
+
+.login-link{
+    color: var(--main-forecolor);
+}
+
+.contact-icon{
+    width: 50px;
+    margin: 10px;
+}
+
+#bad-id{
+    text-align: center;
+    margin: 0;
+    color: var(--main-backcolor);
+}

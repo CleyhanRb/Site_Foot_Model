@@ -1,0 +1,160 @@
+.container{
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    
+    margin-top: 25px;
+}
+
+.container * {
+    overflow: visible;
+}
+
+.container form {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.options{
+    display: flex;
+    flex-flow: row wrap;
+
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.bet-option{
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--menu-backcolor);
+    color: var(--menu-forecolor);
+    float: center;
+    
+    border-radius: 10px;
+    cursor: pointer;
+
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bet-option > * {
+    margin: 0;
+}
+
+.bet-option > h1 {
+    margin-bottom: 25px;
+}
+
+.bet-option > h3 {
+    background-color: var(--menu-backcolor-secondary);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.bet-option:has(> input:checked) {
+    background-color: var(--menu-backcolor-secondary);
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+
+.field-container{
+    display: flex;
+    flex-flow: column wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.field-container > *{
+    flex: 1 1 auto;
+    
+}
+
+.field-container > h1 {
+    transform: rotate(90deg);
+    margin: 10px;
+}
+
+.earnings label, .gains label{
+    margin-left: 10px;
+}
+
+.field {
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+.field.calc {
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border: 3px solid var(--main-forecolor);
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+
+.field.calc i.fa-solid {
+    transform: rotate(90deg);
+}
+
+.field > div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.field > i {
+    margin: 10px;
+}
+
+form input {
+    user-select: none;
+    
+    padding: 10px;
+    border: 0;
+    
+    outline: 0;
+    box-shadow: none;
+
+}
+
+.field-container input:not(input[type="submit"]){
+    background-color: var(--main-backcolor);
+    color: var(--main-forecolor);
+    width: 400px;
+}
+
+.field:has(> div > input:not(input[type="submit"])){
+    margin: 20px 10px;
+    border-bottom: 1px solid gray;
+}
+
+#submit{
+    background-color: var(--menu-backcolor);
+    color: var(--menu-forecolor);
+    font: var(--main-font);
+    cursor: pointer;
+    border-radius: 200px;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,121 @@
+.container{
+    margin: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.parts .subparts{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h2{
+    margin: 0;
+}
+
+.part{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subparts{
+    gap: 100px;
+    margin-top: 50px;
+    justify-content: space-evenly !important;
+}
+
+.field input {
+    user-select: none;
+    
+    padding: 10px;
+    border: 0;
+    
+    outline: 0;
+    box-shadow: none;
+
+    
+}
+
+.field {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 1;
+    margin: 20px 0;
+}
+
+.field input:not(input[type="submit"]){
+    background-color: var(--main-backcolor);
+    color: var(--main-forecolor);
+    width: 100%;
+}
+
+.field div:has(> input:not(input[type="submit"])){
+    margin: 10px 5px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex-basis: 1;
+    
+    width: 400px;
+}
+
+input[type="submit"]{
+    background-color: var(--menu-backcolor);
+    color: var(--menu-forecolor);
+    font: var(--main-font);
+    cursor: pointer;
+    border-radius: 200px;
+    height: 40px;
+    /* width: 100px; */
+    margin: 10px 0;
+    padding: 10px 20px;
+    user-select: none;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    width: 200px;
+}
+
+.subpart{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.subpart h3 {
+    text-align: left;
+    width: 100%;
+}
+
+.subpart > div:has(> select) {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    width: 400px;
+}
+
+.subpart select {
+    background-color: var(--menu-backcolor-secondary);
+    color: var(--menu-forecolor);
+    height: 30px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: 0;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.subpart div:has(> select){
+    margin-bottom: 20px;
+}

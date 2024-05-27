@@ -1,0 +1,111 @@
+
+
+.container * {
+    overflow: visible;
+}
+
+/* DESKTOP */
+@media (min-width:768px) {
+    .container{
+        margin: 50px;
+    }
+
+    .field-container{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-flow: row;
+    }
+}
+
+/* MOBILE */
+@media (max-width:767px) {
+    .container{
+        margin: 10px;
+    }
+
+    .field-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .field{
+        width: 95% !important;
+    }
+
+    .field > div > input {
+        width: 100% !important;
+    }
+
+    .signin-inputs {
+        align-items: center !important;
+    }
+
+    #submit{
+        margin-bottom: 20px;
+    }
+}
+
+.field {
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+.field > div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.signin-inputs {
+    display: flex;
+
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.signin-inputs input {
+    user-select: none;
+    
+    padding: 10px;
+    border: 0;
+    
+    outline: 0;
+    box-shadow: none;
+
+    
+}
+
+.signin-inputs input:not(input[type="submit"]){
+    background-color: var(--main-backcolor);
+    color: var(--main-forecolor);
+    width: 400px;
+}
+
+.signin-inputs div:has(> div > input:not(input[type="submit"])){
+    margin: 20px 10px;
+    border-bottom: 1px solid gray;
+}
+
+
+
+#submit{
+    background-color: var(--menu-backcolor);
+    color: var(--menu-forecolor);
+    font: var(--main-font);
+    cursor: pointer;
+    border-radius: 200px;
+    height: 50px;
+    width: 200px;
+}
+
+#bad-id{
+    text-align: center;
+    margin: 0;
+    color: var(--main-backcolor);
+}
